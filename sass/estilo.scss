@@ -3,6 +3,10 @@ $verde: #7EBC8D;
 $blanco: white;
 $gristexto:#777777;
 
+* {
+	box-sizing: border-box;
+}
+
 body{
 	font-family:$font;
 	text-align: center;
@@ -14,7 +18,7 @@ body{
 	}
 
 .contenedor{
-	max-width: 1000px;
+	max-width: 80%;
 	text-align: center;
 	margin: auto;
 	font-family: $font;
@@ -26,7 +30,7 @@ a{
 
 header{
 	
-	nav{
+	.web{
 		background: rgba(5,5,5,0.1);
 
  		ul{ 
@@ -52,6 +56,10 @@ header{
 		}
 	}
 
+	.mobile {
+		display: none;
+	}
+
 	.header{
 		padding: 250px 150px;
 		color:$blanco;
@@ -71,7 +79,10 @@ header{
 			}
 		}
 	}
-
+	
+	.imagenMobile {
+		display: none;
+	}
 }
 
 #uno{background-color: #F2F2F2;
@@ -97,7 +108,7 @@ header{
 		}
 	}
 
-	hr{width: 1000px;
+	hr{width: 80%;
 		color:#bbbbbb;
 		margin: 0 auto;
 		}
@@ -180,7 +191,9 @@ header{
 
 }
 footer {
+
 	background-color: black;
+	margin: 0;
 
 	h3 {
 		color: $blanco;
@@ -195,17 +208,97 @@ footer {
 		font-size: 1.3rem;
     	padding: 0 0 60px 0;
 	}
-	span {
+	li {
 		font-size: 2.2rem;
     	color: #777777;
-    	padding: 15px;
+    	margin: 15px;
+    	padding-bottom: 60px;
+    	display: inline-block;
 
 	}
 	hr {
-		width: 1000px;
+		width: 80%;
 		height: 0.5px;
 		border: none;
 		background-color: gray;
 
 	}
+	p {
+		color: $gristexto;
+		padding: 30px;
+	}
+	span {
+		color: #bbbbbb;
+	}
+}
+
+@media only screen and (max-width:925px) {
+	
+	header { 
+		.web {
+			display: none;
+		}
+
+		.header {
+			display: none;
+		}
+
+		.mobile {
+			display: block;
+			text-align: center;
+			color: white;
+			font-size: 1rem;
+			padding: 20px 20px;
+			background-color: black;
+			position: fixed;
+			width: 100%;
+		}
+		
+		.imagenMobile {
+			display: block;
+			width: 100%;
+			
+			img {
+				width: 100%;
+			}
+		}
+
+		h1, p {
+			display: none;
+		}
+	}
+	
+	#uno {
+		h2 {
+			font-size: 2rem;
+		}
+
+		p {
+			font-size: 0.9rem;
+		}
+	}
+
+	#dos article {
+		display: block;
+		width: 100%;
+
+		input {
+			width: 100%;
+		}
+	}
+
+	#tres article {
+		display: block;
+		width: 100%;
+
+		p {
+			padding: 0;
+			line-height: 15px;
+		}
+	}
+
+	body {
+		background-image: none;
+	}
+
 }

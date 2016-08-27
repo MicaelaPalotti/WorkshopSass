@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 body {
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -8,7 +11,7 @@ body {
   background-attachment: fixed; }
 
 .contenedor {
-  max-width: 1000px;
+  max-width: 80%;
   text-align: center;
   margin: auto;
   font-family: "Roboto", sans-serif; }
@@ -16,19 +19,21 @@ body {
 a {
   text-decoration: none; }
 
-header nav {
+header .web {
   background: rgba(5, 5, 5, 0.1); }
-  header nav ul li {
+  header .web ul li {
     text-transform: uppercase;
     color: white;
     display: inline-block;
     padding: 25px 28px;
     border-left: 1px solid rgba(255, 255, 255, 0.3); }
-    header nav ul li:first-child {
+    header .web ul li:first-child {
       border-left: none; }
-    header nav ul li a {
+    header .web ul li a {
       color: white;
       letter-spacing: 2px; }
+header .mobile {
+  display: none; }
 header .header {
   padding: 250px 150px;
   color: white;
@@ -38,6 +43,8 @@ header .header {
     padding-bottom: 10px; }
   header .header p span {
     text-transform: uppercase; }
+header .imagenMobile {
+  display: none; }
 
 #uno {
   background-color: #F2F2F2; }
@@ -56,7 +63,7 @@ header .header {
     #uno p a {
       color: #8AC199; }
   #uno hr {
-    width: 1000px;
+    width: 80%;
     color: #bbbbbb;
     margin: 0 auto; }
 
@@ -121,7 +128,8 @@ header .header {
     border-top: 0.5px solid rgba(255, 255, 255, 0.5); }
 
 footer {
-  background-color: black; }
+  background-color: black;
+  margin: 0; }
   footer h3 {
     color: white;
     font-size: 3rem;
@@ -131,14 +139,64 @@ footer {
     color: #777777;
     font-size: 1.3rem;
     padding: 0 0 60px 0; }
-  footer span {
+  footer li {
     font-size: 2.2rem;
     color: #777777;
-    padding: 15px; }
+    margin: 15px;
+    padding-bottom: 60px;
+    display: inline-block; }
   footer hr {
-    width: 1000px;
+    width: 80%;
     height: 0.5px;
     border: none;
     background-color: gray; }
+  footer p {
+    color: #777777;
+    padding: 30px; }
+  footer span {
+    color: #bbbbbb; }
+
+@media only screen and (max-width: 925px) {
+  header .web {
+    display: none; }
+  header .header {
+    display: none; }
+  header .mobile {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    padding: 20px 20px;
+    background-color: black;
+    position: fixed;
+    width: 100%; }
+  header .imagenMobile {
+    display: block;
+    width: 100%; }
+    header .imagenMobile img {
+      width: 100%; }
+  header h1, header p {
+    display: none; }
+
+  #uno h2 {
+    font-size: 2rem; }
+  #uno p {
+    font-size: 0.9rem; }
+
+  #dos article {
+    display: block;
+    width: 100%; }
+    #dos article input {
+      width: 100%; }
+
+  #tres article {
+    display: block;
+    width: 100%; }
+    #tres article p {
+      padding: 0;
+      line-height: 15px; }
+
+  body {
+    background-image: none; } }
 
 /*# sourceMappingURL=estilo.css.map */
