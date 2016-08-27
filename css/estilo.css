@@ -1,0 +1,144 @@
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background-image: url("../img/header.jpg");
+  background-position-y: -150px;
+  background-size: cover;
+  width: 100%;
+  background-attachment: fixed; }
+
+.contenedor {
+  max-width: 1000px;
+  text-align: center;
+  margin: auto;
+  font-family: "Roboto", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+header nav {
+  background: rgba(5, 5, 5, 0.1); }
+  header nav ul li {
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
+    padding: 25px 28px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3); }
+    header nav ul li:first-child {
+      border-left: none; }
+    header nav ul li a {
+      color: white;
+      letter-spacing: 2px; }
+header .header {
+  padding: 250px 150px;
+  color: white;
+  font-weight: 300; }
+  header .header h1 {
+    font-size: 6rem;
+    padding-bottom: 10px; }
+  header .header p span {
+    text-transform: uppercase; }
+
+#uno {
+  background-color: #F2F2F2; }
+  #uno h2 {
+    font-size: 3.5rem;
+    color: #777777;
+    padding: 50px 0 30px 0;
+    font-weight: 300; }
+  #uno p {
+    color: #777777;
+    line-height: 30px;
+    font-size: 0.9rem;
+    padding-bottom: 70px; }
+    #uno p span {
+      font-weight: 600; }
+    #uno p a {
+      color: #8AC199; }
+  #uno hr {
+    width: 1000px;
+    color: #bbbbbb;
+    margin: 0 auto; }
+
+#dos article span {
+  color: #bbbbbb;
+  font-size: 4rem; }
+
+#dos {
+  background-color: #F2F2F2; }
+  #dos article {
+    width: 30%;
+    display: inline-block;
+    padding: 40px 10px;
+    box-sizing: border-box; }
+    #dos article h3 {
+      font-size: 1.7rem;
+      color: #bbbbbb;
+      padding: 20px 0 30px 0;
+      font-weight: 300; }
+    #dos article p {
+      line-height: 27px;
+      color: #bbbbbb;
+      font-size: 0.9rem;
+      padding-bottom: 25px; }
+    #dos article input {
+      height: 47px;
+      width: 123px;
+      background-color: #7EBC8D;
+      color: white;
+      padding: 5px 0;
+      border-radius: 3px;
+      border: none; }
+
+#tres {
+  padding: 100px 0 80px 0;
+  background-color: white; }
+  #tres article {
+    width: 45%;
+    display: inline-block;
+    padding: 10px; }
+    #tres article img {
+      width: 100%; }
+    #tres article h3 {
+      font-size: 2rem;
+      color: #909090;
+      padding: 50px 0 30px 0;
+      font-weight: 300; }
+    #tres article p {
+      padding: 0 25px 0 25px;
+      line-height: 30px;
+      color: #909090;
+      font-size: 0.8rem; }
+
+#cuatro {
+  background: rgba(5, 5, 5, 0.1); }
+  #cuatro p {
+    padding: 150px 150px;
+    font-size: 1.5rem;
+    line-height: 30px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.5);
+    border-top: 0.5px solid rgba(255, 255, 255, 0.5); }
+
+footer {
+  background-color: black; }
+  footer h3 {
+    color: white;
+    font-size: 3rem;
+    padding: 65px 0 30px 0;
+    font-weight: 300; }
+  footer h4 {
+    color: #777777;
+    font-size: 1.3rem;
+    padding: 0 0 60px 0; }
+  footer span {
+    font-size: 2.2rem;
+    color: #777777;
+    padding: 15px; }
+  footer hr {
+    width: 1000px;
+    height: 0.5px;
+    border: none;
+    background-color: gray; }
+
+/*# sourceMappingURL=estilo.css.map */
